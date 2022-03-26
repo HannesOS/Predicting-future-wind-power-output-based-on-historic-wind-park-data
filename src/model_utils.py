@@ -71,6 +71,6 @@ def cumulative_absolute_percentage_error(y_true, y_pred):
         float: CAPE of the prediction
     """
 
-    nominator = np.sum(np.abs(y_true - y_pred))
-    denominator = BASIS * len(y_true)
+    nominator = np.sum(np.abs(y_true[:len(y_pred)] - y_pred))
+    denominator = BASIS * len(y_pred)
     return nominator / denominator

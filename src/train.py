@@ -98,7 +98,7 @@ def train_model(x_train, y_train, x_test,
     if model_architecture == 'LSTM' or model_architecture == 'GRU':
         history = model.fit(
                 x_train,
-                epochs=5000, batch_size=128,
+                epochs=5000, batch_size=128, shuffle=False,
                 callbacks=[csv_logger, early_stopping], validation_data=x_test
                 )
     else:         
@@ -178,7 +178,7 @@ def hyperparams_search(x_train, y_train, x_test,
 
 
 if __name__ == "__main__":
-    model_architecture = 'GRU' #Choose between FFNN, LSTM, autoencoder
+    model_architecture = 'GRU' #Choose between FFNN, LSTM, GRU autoencoder
 
     drop_cols = [15, 16] #drop interpolated and capacity columns as they shouldn't matter
     x_train, y_train = get_features_and_targets(csv_path=PATH_TRAIN_DATA, excluded_features=drop_cols, normalize=False)
