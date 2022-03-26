@@ -1,0 +1,34 @@
+03_18_2022_21_44_31. Trial: 0. Epochs: 356. Hyperparameters: [[64, 128, 256, 512, 1024], 0]
+Model: "custom_ffnn"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               multiple                  384       
+                                                                 
+ dense_1 (Dense)             multiple                  8320      
+                                                                 
+ dense_2 (Dense)             multiple                  33024     
+                                                                 
+ dense_3 (Dense)             multiple                  131584    
+                                                                 
+ dense_4 (Dense)             multiple                  525312    
+                                                                 
+ dense_5 (Dense)             multiple                  1025      
+                                                                 
+=================================================================
+Total params: 699,649
+Trainable params: 699,649
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [180564288.0, 13437.4208984375, 0.07341835647821426] 
+Prediction: [[13771.028]
+ [14480.794]
+ [15192.742]
+ ...
+ [99047.17 ]
+ [99047.17 ]
+ [99047.17 ]] 
+Cumulative Absolute Percentage Error on test data: 0.07341833600948261 
+
+
+
