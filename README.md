@@ -7,6 +7,7 @@
 -- ABSTRACT -- 
 
 
+<br><br><br>
 ## Repository Overview: <br><br>
 <b>architecture:</b> Contains subclasses inhereting from tf.keras.Model. Those are the models we are training. <br><br>
 <b>data:</b> Train and test data taken from the Bremen Big Data Challenge 2018 (https://bbdc.csl.uni-bremen.de/index.php/2018h/23-aufgabenstellung-2018). <br><br>
