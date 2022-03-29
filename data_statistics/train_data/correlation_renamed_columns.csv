@@ -1,0 +1,19 @@
+,Wind speed at 48m [$m/s$],Wind speed at 100m [$m/s$],Wind speed at 152m [$m/s$],Wind direction at 48m,Wind direction at 100m,Wind direction at 152m,Probabilistic wind speed at 100m (10 Percentile) [$m/s$],Probabilistic wind speed at 100m (20 Percentile) [$m/s$],Probabilistic wind speed at 100m (30 Percentile) [$m/s$],Probabilistic wind speed at 100m (40 Percentile) [$m/s$],Probabilistic wind speed at 100m (50 Percentile) [$m/s$],Probabilistic wind speed at 100m (60 Percentile) [$m/s$],Probabilistic wind speed at 100m (70 Percentile) [$m/s$],Probabilistic wind speed at 100m (80 Percentile) [$m/s$],Probabilistic wind speed at 100m (90 Percentile) [$m/s$],Interpolated,Available capacity [$kW$],Wind power output [$kWh$]
+Wind speed at 48m [$m/s$],1.0,0.982,0.958,0.126,0.123,0.121,0.98,0.981,0.982,0.982,0.982,0.982,0.982,0.982,0.981,-0.0,0.006,0.889
+Wind speed at 100m [$m/s$],0.982,1.0,0.992,0.093,0.094,0.097,0.998,0.999,1.0,1.0,1.0,1.0,1.0,0.999,0.998,-0.0,0.057,0.889
+Wind speed at 152m [$m/s$],0.958,0.992,1.0,0.072,0.075,0.079,0.99,0.991,0.992,0.992,0.992,0.992,0.992,0.991,0.99,-0.0,0.077,0.875
+Wind direction at 48m,0.126,0.093,0.072,1.0,0.948,0.918,0.091,0.091,0.092,0.093,0.093,0.094,0.094,0.095,0.096,-0.002,-0.029,0.117
+Wind direction at 100m,0.123,0.094,0.075,0.948,1.0,0.967,0.092,0.093,0.093,0.094,0.095,0.095,0.095,0.096,0.097,-0.001,-0.029,0.114
+Wind direction at 152m,0.121,0.097,0.079,0.918,0.967,1.0,0.095,0.096,0.096,0.097,0.097,0.097,0.098,0.098,0.099,-0.001,-0.026,0.112
+Probabilistic wind speed at 100m (10 Percentile) [$m/s$],0.98,0.998,0.99,0.091,0.092,0.095,1.0,0.999,0.999,0.999,0.998,0.997,0.997,0.996,0.995,-0.0,0.055,0.886
+Probabilistic wind speed at 100m (20 Percentile) [$m/s$],0.981,0.999,0.991,0.091,0.093,0.096,0.999,1.0,1.0,0.999,0.999,0.999,0.998,0.997,0.996,-0.0,0.055,0.887
+Probabilistic wind speed at 100m (30 Percentile) [$m/s$],0.982,1.0,0.992,0.092,0.093,0.096,0.999,1.0,1.0,1.0,0.999,0.999,0.999,0.998,0.997,-0.0,0.056,0.888
+Probabilistic wind speed at 100m (40 Percentile) [$m/s$],0.982,1.0,0.992,0.093,0.094,0.097,0.999,0.999,1.0,1.0,1.0,1.0,0.999,0.999,0.998,-0.0,0.056,0.888
+Probabilistic wind speed at 100m (50 Percentile) [$m/s$],0.982,1.0,0.992,0.093,0.095,0.097,0.998,0.999,0.999,1.0,1.0,1.0,1.0,0.999,0.998,-0.0,0.057,0.889
+Probabilistic wind speed at 100m (60 Percentile) [$m/s$],0.982,1.0,0.992,0.094,0.095,0.097,0.997,0.999,0.999,1.0,1.0,1.0,1.0,0.999,0.999,-0.0,0.057,0.889
+Probabilistic wind speed at 100m (70 Percentile) [$m/s$],0.982,1.0,0.992,0.094,0.095,0.098,0.997,0.998,0.999,0.999,1.0,1.0,1.0,1.0,0.999,-0.0,0.057,0.889
+Probabilistic wind speed at 100m (80 Percentile) [$m/s$],0.982,0.999,0.991,0.095,0.096,0.098,0.996,0.997,0.998,0.999,0.999,0.999,1.0,1.0,1.0,-0.0,0.057,0.889
+Probabilistic wind speed at 100m (90 Percentile) [$m/s$],0.981,0.998,0.99,0.096,0.097,0.099,0.995,0.996,0.997,0.998,0.998,0.999,0.999,1.0,1.0,-0.0,0.058,0.889
+Interpolated,-0.0,-0.0,-0.0,-0.002,-0.001,-0.001,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,1.0,-0.0,0.0
+Available capacity [$kW$],0.006,0.057,0.077,-0.029,-0.029,-0.026,0.055,0.055,0.056,0.056,0.057,0.057,0.057,0.057,0.058,-0.0,1.0,0.07
+Wind power output [$kWh$],0.889,0.889,0.875,0.117,0.114,0.112,0.886,0.887,0.888,0.888,0.889,0.889,0.889,0.889,0.889,0.0,0.07,1.0

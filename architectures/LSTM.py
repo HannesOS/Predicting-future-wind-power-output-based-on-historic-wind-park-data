@@ -20,11 +20,10 @@ class CustomLSTM(Model):
         super(CustomLSTM, self).__init__()
         self.layers_ = []
 
-        if len(layer_units) > 1:
-            self.layers_.append(tf.keras.layers.LSTM(layer_units[0], activation='relu', return_sequences=True))
-
         for i in range(len(layer_units)-1):
-                self.layers_.append(tf.keras.layers.LSTM(layer_units[i], activation='relu'))
+            self.layers_.append(tf.keras.layers.LSTM(layer_units[i], activation='relu', return_sequences=True))
+
+        self.layers_.append(tf.keras.layers.LSTM(layer_units[-1], activation='relu'))
 
         if dropout_rate > 0:
             self.layers_.append(Dropout(dropout_rate))

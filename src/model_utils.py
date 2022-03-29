@@ -21,25 +21,25 @@ model_hyperparameters_FFNN = {
                             }
 
 model_hyperparameters_LSTM = {
-                            'possible_layer_units' : [32, 64, 128, 256, 512, 1024],
-                            'possible_layer_amount' : np.arange(1, 5)[::-1],
+                            'possible_layer_units' : [64, 128, 256],
+                            'possible_layer_amount' : np.arange(2, 5),
                             'dropout_rates' : [0, 0.25]
                             }
 
 model_hyperparameters_GRU = {
-                            'possible_layer_units' : [32, 64, 128, 256, 512, 1024],
-                            'possible_layer_amount' : np.arange(1, 5)[::-1],
+                            'possible_layer_units' : [64, 128, 256],
+                            'possible_layer_amount' : np.arange(2, 5),
                             'dropout_rates' : [0, 0.25]
                             }
 
 
 def get_hyperparameters(model_architecture):
     if model_architecture == 'FFNN':
-        return model_hyperparameters_FFNN
+        return model_hyperparameters_FFNN.values()
     elif model_architecture == 'LSTM':
-        return model_hyperparameters_LSTM
+        return model_hyperparameters_LSTM.values()
     elif model_architecture == 'GRU':
-        return model_hyperparameters_GRU
+        return model_hyperparameters_GRU.values()
     else:
         exit('Please specify a valid model architecture')
 

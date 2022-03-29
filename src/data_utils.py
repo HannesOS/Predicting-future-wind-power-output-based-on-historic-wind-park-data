@@ -39,7 +39,7 @@ def load_csv_data(path):
         return loaded_data, date_time
 
 
-def get_features_and_targets(data=None, model_architecture='FFNN', excluded_features=[None], normalize=True, csv_path=None, window_size=5):
+def get_features_and_targets(data=None, model_architecture='FFNN', excluded_features=[None], normalize=True, csv_path=None, autoencoder=None, window_size=5):
         """
         Extracts the features and targets of the data. 
         The target is the last column (energy output) while the other columns, with the data column being an exception, are the features.
@@ -54,24 +54,29 @@ def get_features_and_targets(data=None, model_architecture='FFNN', excluded_feat
             excluded_features (list, optional): Indeces of features to be removed from the data set. Has to be given Defaults to [None].
             normalize (bool, optional): Whether or not the data should be normalized. Defaults to True.
             csv_path (string, optional): Path to the data. Defaults to None.
+            autoencoder (keras.Model, optional): Autoencoder. Will be use to encode the features.
             window_size (int, optional): Size of data windows passed to the Keras TimeSeriesGenerator. Only used for LSTMs and GRUs Defaults to 5.
 
         Returns:
             ndarray: features and targets of the data set
         """
+        if data is None:
+            if csv_path is not None:
+                    data = load_csv_data(csv_path)[0]
 
-        if csv_path is not None:
-                data = load_csv_data(csv_path)[0]
-        elif data is None:
-                exit('Please specifiy the path to the data csv file (with parameter csv_path) or give the data directly (with paramter data)')
-
+            else:
+                    exit('Please specifiy the path to the data csv file (with parameter csv_path) or give the data directly (with paramter data)')
         feature_cols = data.columns[:-1]
         target_col = data.columns[-1]
         features = data.drop(feature_cols[[i for i in range(len(feature_cols)) if i in excluded_features]], axis=1).drop(target_col, axis=1) #Remove unwanted features
         targets = data[target_col]
+
         print(f'Succesfully loaded data with features {features.columns} and target {targets.name}.')
         if normalize:
                 features = normalize_data(features)
+        if autoencoder is not None:
+            features = autoencoder.encoder.predict(features)
+        
         if model_architecture == 'LSTM' or model_architecture == 'GRU':
                 return TimeseriesGenerator(features, targets, window_size)
         return features, targets
@@ -120,8 +125,8 @@ def analyze_data(data, save=True):
         """
 
         descr = data.describe()
-        cov = data.cov()
-        corr = data.corr()
+        cov = data.cov().round(3)
+        corr = data.corr().round(3)
         print(descr)
         print("\n\nCovariance matrix: \n", cov)
         print("\n\nCorrelation matrix: \n", corr)
@@ -186,5 +191,5 @@ def day_to_timestep(day):
         return day * 24 * 4 
 
 if __name__ == "__main__":
-    test_data, _ = load_csv_data(PATH_SOLUTION)
-    analyze_data(test_data)
+    train_data, _ = load_csv_data(PATH_TRAIN_DATA)
+    analyze_data(train_data)
