@@ -1,8 +1,8 @@
-# <center>Using TensorFlow to predict future wind power output based on historic wind park data - Bremen Big Data Challenge 2018 - </center>
-## <centerHannes Erbis and Marty Schüller </center>
-## <centerOsnabrück Osnabrück </center>
-## <centerImplementing ANNs with Tensorflow </center>
-### <centerProject report </center>
+# <p style="text-align:center"> Using TensorFlow to predict future wind power output based on historic wind park data - Bremen Big Data Challenge 2018 - </p>
+## <p style="text-align:center"> Hannes Erbis and Marty Schüller </p>
+## <p style="text-align:center"> Osnabrück Osnabrück </p>
+## <p style="text-align:center"> Implementing ANNs with Tensorflow </p>
+### <p style="text-align:center"> Project report </p>
 
 -- ABSTRACT -- 
 
