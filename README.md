@@ -14,10 +14,10 @@ data_statistics: Some statistics about the data. For example correlations betwee
 figures: Figures used in our report. <br>
 logs: Training logs and model summaries when searching for hyperparameters. <br>
 predictions: Wind energy output predictions the best model from each architecture. <br>
-src: Some util modules that provide useful function <br>
-&emsp;&emsp;   - data-utils: <br>
-&emsp;&emsp;    - model-utils: <br>
-&emsp;&emsp;    - serialization-utils <br>
+src: Some util modules that provide useful function: <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;   - data-utils: <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;    - model-utils: <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;    - serialization-utils <br>
 
 
 
