@@ -15,9 +15,13 @@
 <b>logs:</b> Training logs and model summaries when searching for hyperparameters. <br><br>
 <b>predictions:</b> Wind energy output predictions the best model from each architecture. <br><br>
 <b>src:</b> Some util modules that provide useful function: <br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;    - <b>data-utils:</b> <br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;    - <b>model-utils:</b> <br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;    - <b>serialization-utils:</b> <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;    - <b>data-utils.py: Provides functions used for data processing and visualization.</b> <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;    - <b>model-utils.py: Provides functions relating to the model architectures and more.</b> <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;    - <b>serialization-utils.py: Provides logging and model serialization functions.</b> <br><br>
+<b>trained_models:</b> Serialized version of trained models.<br><br>
+<b>energy_output_prediction.py:</b> Main module for this project. Demonstrates our best models and shows their results.<br><br>
+<b>train.py:</b> Contains functions required for training and optimizing our models. If used as a main module, trains the specified model.<br><br>
+
 
 
 
