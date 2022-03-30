@@ -57,7 +57,7 @@ def CAPE(real, prediction):
 # Prints out the results and saves them
 def predict_output(model, model_architecture, x_test):
     prediction = model.predict(x_test)
-    np.savetxt(f'predictions\\prediction_{model_architecture}.csv', prediction)
+    np.savetxt(f'predictions\\prediction_{model_architecture}.csv', prediction, fmt='%.4f')
     print(f'Energy output prediction: {prediction}')
     print(f'CAPE: {CAPE(x_test, prediction)}')
 
@@ -66,8 +66,8 @@ def predict_output(model, model_architecture, x_test):
 # See src.train.py for details on how these models where obtained
 
 # Now we load the acutal predicting models
-model_FFNN = tf.keras.models.load_model('trained_models\\best\\FFNN_15features', custom_objects=custom_objects)
-model_FFNN_encoded = tf.keras.models.load_model('trained_models\\best\\FFMM_15features_encoded_test_data_better', custom_objects=custom_objects)
+model_FFNN = tf.keras.models.load_model('trained_models\\best\\FFNN', custom_objects=custom_objects)
+model_FFNN_encoded = tf.keras.models.load_model('trained_models\\best\\FFNN_encoded', custom_objects=custom_objects)
 
 model_LSTM = tf.keras.models.load_model('trained_models\\best\\LSTM', custom_objects=custom_objects)
 model_LSTM_encoded = tf.keras.models.load_model('trained_models\\best\\LSTM_encoded', custom_objects=custom_objects)
@@ -78,7 +78,7 @@ model_GRU_encoded = tf.keras.models.load_model('trained_models\\best\\GRU_encode
 
 # We now predict the energy outputs given our different models
 
-print("Predicting the energy output using an FFNN model:")
+print("\n\n\nPredicting the energy output using an FFNN model:")
 model_FFNN.summary()
 predict_output(model_FFNN, 'FFNN', x_test)
 
@@ -105,7 +105,7 @@ model_GRU_encoded.summary()
 predict_output(model_GRU_encoded, 'GRU_encoded', timeseries_data_test_encoded)
 
 
-print("The best model we tried is therefore a Feed-Forward-Network with autoencoded data")
+print("\n\nThe best model we tried is therefore the feedforward-Network with autoencoded data")
 
 
 

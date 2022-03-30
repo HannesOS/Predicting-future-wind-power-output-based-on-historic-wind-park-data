@@ -9,7 +9,6 @@ from sklearn.model_selection import cross_val_score, GridSearchCV
 from tensorboard.plugins.hparams import api as hp
 from datetime import datetime as dt
 from keras.callbacks import CSVLogger
-import keras_tuner as kt
 
 
 def build_model(model_architecture, hyperparameters, loss='mse'):
@@ -36,7 +35,7 @@ def build_model(model_architecture, hyperparameters, loss='mse'):
     return model
 
 
-def stopping_condition(monitor='val_cumulative_absolute_percentage_error_kerras_metric', patience=200):
+def stopping_condition(monitor='val_cumulative_absolute_percentage_error_kerras_metric', patience=300):
     """
     To find the best model, the training will stop if the training starts to perform worse based on a metric on the validation data.
     To account for some randomness, training won't stop instantly after it starts performing worse on the validation data
@@ -227,16 +226,10 @@ if __name__ == "__main__":
             x_train = get_features_and_targets(csv_path=PATH_TRAIN_DATA, model_architecture='LSTM', excluded_features=excluded_features, normalize=False, autoencoder=autoencoder)
             x_test = get_features_and_targets(csv_path=PATH_SOLUTION, model_architecture='LSTM', excluded_features=excluded_features, normalize=False, autoencoder=autoencoder)
         
-        #possible_layer_units, possible_layer_amount, dropout_rates = get_hyperparameters(model_architecture)
-        #hyperparams_search(x_train, y_train, x_test,
-        #    y_test, model_architecture, possible_layer_units,
-        #    possible_layer_amount, dropout_rates)
-        layer_units = [256]
-        dropout_rate = 0
-
-        #train_model(x_train, y_train, x_test, y_test, model_architecture, hyperparameters=[layer_units, dropout_rate])
-        #train_model(x_train, y_train, x_test, y_test, 'GRU', hyperparameters=[layer_units, dropout_rate])
-
+        possible_layer_units, possible_layer_amount, dropout_rates = get_hyperparameters(model_architecture)
+        hyperparams_search(x_train, y_train, x_test,
+            y_test, model_architecture, possible_layer_units,
+            possible_layer_amount, dropout_rates)
 
 
 

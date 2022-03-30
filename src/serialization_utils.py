@@ -89,6 +89,5 @@ def summary_log(model, model_architecture, x_test, y_test, trial, history, hyper
         f.write(f'Prediction: {prediction} \n')
         CAPE = cumulative_absolute_percentage_error(y_test.to_numpy(dtype=float), prediction.flatten())
         f.write(f'Cumulative Absolute Percentage Error on test data: {CAPE} \n\n\n\n')
-        np.savetxt('prediction.csv', prediction)
         
         print(f'\nTrial finished. Test CAPE: {CAPE}\n\n\n')

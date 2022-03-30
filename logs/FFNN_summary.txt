@@ -2452,3 +2452,1103 @@ Cumulative Absolute Percentage Error on test data: 0.07746632089106065
 
 
 
+03_30_2022_04_56_25. Model_architecture: FFNN. Trial: 0. Epochs: 365. Hyperparameters: [[32, 256, 512, 1024], 0]
+Model: "custom_ffnn"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               multiple                  192       
+                                                                 
+ dense_1 (Dense)             multiple                  8448      
+                                                                 
+ dense_2 (Dense)             multiple                  131584    
+                                                                 
+ dense_3 (Dense)             multiple                  525312    
+                                                                 
+ dense_4 (Dense)             multiple                  1025      
+                                                                 
+=================================================================
+Total params: 666,561
+Trainable params: 666,561
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [183494544.0, 13546.015625, 0.0738939493894577] 
+Prediction: [[ 11146.337]
+ [ 11880.549]
+ [ 12729.903]
+ ...
+ [100641.42 ]
+ [100641.42 ]
+ [100641.42 ]] 
+Cumulative Absolute Percentage Error on test data: 0.07389391120362676 
+
+
+
+03_30_2022_05_05_46. Model_architecture: FFNN. Trial: 0. Epochs: 374. Hyperparameters: [[32, 64, 256, 512, 1024], 0]
+Model: "custom_ffnn_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_5 (Dense)             multiple                  192       
+                                                                 
+ dense_6 (Dense)             multiple                  2112      
+                                                                 
+ dense_7 (Dense)             multiple                  16640     
+                                                                 
+ dense_8 (Dense)             multiple                  131584    
+                                                                 
+ dense_9 (Dense)             multiple                  525312    
+                                                                 
+ dense_10 (Dense)            multiple                  1025      
+                                                                 
+=================================================================
+Total params: 676,865
+Trainable params: 676,865
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [185235920.0, 13610.1396484375, 0.07401599735021591] 
+Prediction: [[12253.7  ]
+ [13006.023]
+ [13746.09 ]
+ ...
+ [99289.32 ]
+ [99289.32 ]
+ [99289.32 ]] 
+Cumulative Absolute Percentage Error on test data: 0.07401599438889654 
+
+
+
+03_30_2022_05_14_50. Model_architecture: FFNN. Trial: 0. Epochs: 366. Hyperparameters: [[64, 128, 256, 512, 1024], 0]
+Model: "custom_ffnn_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_11 (Dense)            multiple                  384       
+                                                                 
+ dense_12 (Dense)            multiple                  8320      
+                                                                 
+ dense_13 (Dense)            multiple                  33024     
+                                                                 
+ dense_14 (Dense)            multiple                  131584    
+                                                                 
+ dense_15 (Dense)            multiple                  525312    
+                                                                 
+ dense_16 (Dense)            multiple                  1025      
+                                                                 
+=================================================================
+Total params: 699,649
+Trainable params: 699,649
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [181643104.0, 13477.50390625, 0.07329541444778442] 
+Prediction: [[11284.565]
+ [11984.185]
+ [12785.943]
+ ...
+ [99133.586]
+ [99133.586]
+ [99133.586]] 
+Cumulative Absolute Percentage Error on test data: 0.073295429661004 
+
+
+
+03_30_2022_05_23_27. Model_architecture: FFNN. Trial: 0. Epochs: 360. Hyperparameters: [[32, 128, 256, 512, 512], 0]
+Model: "custom_ffnn_3"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_17 (Dense)            multiple                  192       
+                                                                 
+ dense_18 (Dense)            multiple                  4224      
+                                                                 
+ dense_19 (Dense)            multiple                  33024     
+                                                                 
+ dense_20 (Dense)            multiple                  131584    
+                                                                 
+ dense_21 (Dense)            multiple                  262656    
+                                                                 
+ dense_22 (Dense)            multiple                  513       
+                                                                 
+=================================================================
+Total params: 432,193
+Trainable params: 432,193
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [185894032.0, 13634.2958984375, 0.0744611844420433] 
+Prediction: [[13572.011]
+ [14339.133]
+ [15137.297]
+ ...
+ [99971.46 ]
+ [99971.46 ]
+ [99971.46 ]] 
+Cumulative Absolute Percentage Error on test data: 0.0744612164438675 
+
+
+
+03_30_2022_05_32_22. Model_architecture: FFNN. Trial: 0. Epochs: 338. Hyperparameters: [[32, 64, 128, 256, 512, 1024], 0]
+Model: "custom_ffnn_4"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_23 (Dense)            multiple                  192       
+                                                                 
+ dense_24 (Dense)            multiple                  2112      
+                                                                 
+ dense_25 (Dense)            multiple                  8320      
+                                                                 
+ dense_26 (Dense)            multiple                  33024     
+                                                                 
+ dense_27 (Dense)            multiple                  131584    
+                                                                 
+ dense_28 (Dense)            multiple                  525312    
+                                                                 
+ dense_29 (Dense)            multiple                  1025      
+                                                                 
+=================================================================
+Total params: 701,569
+Trainable params: 701,569
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [186968912.0, 13673.6572265625, 0.07392182946205139] 
+Prediction: [[ 11472.009]
+ [ 12297.227]
+ [ 13156.421]
+ ...
+ [102967.65 ]
+ [102967.65 ]
+ [102967.65 ]] 
+Cumulative Absolute Percentage Error on test data: 0.07392185347237265 
+
+
+
+03_30_2022_05_44_49. Model_architecture: FFNN. Trial: 0. Epochs: 538. Hyperparameters: [[32, 256, 512, 1024], 0]
+Model: "custom_ffnn_5"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_30 (Dense)            multiple                  512       
+                                                                 
+ dense_31 (Dense)            multiple                  8448      
+                                                                 
+ dense_32 (Dense)            multiple                  131584    
+                                                                 
+ dense_33 (Dense)            multiple                  525312    
+                                                                 
+ dense_34 (Dense)            multiple                  1025      
+                                                                 
+=================================================================
+Total params: 666,881
+Trainable params: 666,881
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [191155328.0, 13825.8935546875, 0.07625427842140198] 
+Prediction: [[12312.933]
+ [13437.499]
+ [14609.903]
+ ...
+ [96440.44 ]
+ [96440.44 ]
+ [96440.44 ]] 
+Cumulative Absolute Percentage Error on test data: 0.07625431276570183 
+
+
+
+03_30_2022_05_53_37. Model_architecture: FFNN. Trial: 0. Epochs: 353. Hyperparameters: [[32, 64, 256, 512, 1024], 0]
+Model: "custom_ffnn_6"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_35 (Dense)            multiple                  512       
+                                                                 
+ dense_36 (Dense)            multiple                  2112      
+                                                                 
+ dense_37 (Dense)            multiple                  16640     
+                                                                 
+ dense_38 (Dense)            multiple                  131584    
+                                                                 
+ dense_39 (Dense)            multiple                  525312    
+                                                                 
+ dense_40 (Dense)            multiple                  1025      
+                                                                 
+=================================================================
+Total params: 677,185
+Trainable params: 677,185
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [190620976.0, 13806.5556640625, 0.07451488822698593] 
+Prediction: [[11727.079]
+ [12670.005]
+ [13677.168]
+ ...
+ [99002.336]
+ [99002.336]
+ [99002.336]] 
+Cumulative Absolute Percentage Error on test data: 0.07451493379050213 
+
+
+
+03_30_2022_06_02_38. Model_architecture: FFNN. Trial: 0. Epochs: 365. Hyperparameters: [[64, 128, 256, 512, 1024], 0]
+Model: "custom_ffnn_7"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_41 (Dense)            multiple                  1024      
+                                                                 
+ dense_42 (Dense)            multiple                  8320      
+                                                                 
+ dense_43 (Dense)            multiple                  33024     
+                                                                 
+ dense_44 (Dense)            multiple                  131584    
+                                                                 
+ dense_45 (Dense)            multiple                  525312    
+                                                                 
+ dense_46 (Dense)            multiple                  1025      
+                                                                 
+=================================================================
+Total params: 700,289
+Trainable params: 700,289
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [195191824.0, 13971.1064453125, 0.07553862035274506] 
+Prediction: [[11731.017]
+ [12502.206]
+ [13397.123]
+ ...
+ [97924.89 ]
+ [97924.89 ]
+ [97924.89 ]] 
+Cumulative Absolute Percentage Error on test data: 0.0755385941271849 
+
+
+
+03_30_2022_06_11_50. Model_architecture: FFNN. Trial: 0. Epochs: 379. Hyperparameters: [[32, 128, 256, 512, 512], 0]
+Model: "custom_ffnn_8"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_47 (Dense)            multiple                  512       
+                                                                 
+ dense_48 (Dense)            multiple                  4224      
+                                                                 
+ dense_49 (Dense)            multiple                  33024     
+                                                                 
+ dense_50 (Dense)            multiple                  131584    
+                                                                 
+ dense_51 (Dense)            multiple                  262656    
+                                                                 
+ dense_52 (Dense)            multiple                  513       
+                                                                 
+=================================================================
+Total params: 432,513
+Trainable params: 432,513
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [197377232.0, 14049.1005859375, 0.07576169073581696] 
+Prediction: [[12143.432]
+ [13070.541]
+ [14050.109]
+ ...
+ [96035.05 ]
+ [96035.05 ]
+ [96035.05 ]] 
+Cumulative Absolute Percentage Error on test data: 0.07576168837452306 
+
+
+
+03_30_2022_06_22_25. Model_architecture: FFNN. Trial: 0. Epochs: 407. Hyperparameters: [[32, 64, 128, 256, 512, 1024], 0]
+Model: "custom_ffnn_9"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_53 (Dense)            multiple                  512       
+                                                                 
+ dense_54 (Dense)            multiple                  2112      
+                                                                 
+ dense_55 (Dense)            multiple                  8320      
+                                                                 
+ dense_56 (Dense)            multiple                  33024     
+                                                                 
+ dense_57 (Dense)            multiple                  131584    
+                                                                 
+ dense_58 (Dense)            multiple                  525312    
+                                                                 
+ dense_59 (Dense)            multiple                  1025      
+                                                                 
+=================================================================
+Total params: 701,889
+Trainable params: 701,889
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [191336704.0, 13832.451171875, 0.07495381683111191] 
+Prediction: [[11861.038]
+ [12452.952]
+ [13259.966]
+ ...
+ [98980.51 ]
+ [98980.51 ]
+ [98980.51 ]] 
+Cumulative Absolute Percentage Error on test data: 0.07495383085167967 
+
+
+
+03_30_2022_16_18_46. Model_architecture: FFNN. Trial: 0. Epochs: 373. Hyperparameters: [[32, 256, 512, 1024], 0]
+Model: "custom_ffnn"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               multiple                  192       
+                                                                 
+ dense_1 (Dense)             multiple                  8448      
+                                                                 
+ dense_2 (Dense)             multiple                  131584    
+                                                                 
+ dense_3 (Dense)             multiple                  525312    
+                                                                 
+ dense_4 (Dense)             multiple                  1025      
+                                                                 
+=================================================================
+Total params: 666,561
+Trainable params: 666,561
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [185842208.0, 13632.3955078125, 0.07460834085941315] 
+Prediction: [[ 12198.625]
+ [ 12904.575]
+ [ 13639.583]
+ ...
+ [102543.64 ]
+ [102543.64 ]
+ [102543.64 ]] 
+Cumulative Absolute Percentage Error on test data: 0.0746083300214698 
+
+
+
+03_30_2022_16_27_38. Model_architecture: FFNN. Trial: 0. Epochs: 362. Hyperparameters: [[32, 256, 512, 1024], 0]
+Model: "custom_ffnn_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_5 (Dense)             multiple                  192       
+                                                                 
+ dense_6 (Dense)             multiple                  8448      
+                                                                 
+ dense_7 (Dense)             multiple                  131584    
+                                                                 
+ dense_8 (Dense)             multiple                  525312    
+                                                                 
+ dense_9 (Dense)             multiple                  1025      
+                                                                 
+=================================================================
+Total params: 666,561
+Trainable params: 666,561
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [185700496.0, 13627.1962890625, 0.07440906018018723] 
+Prediction: [[ 11544.576]
+ [ 12338.887]
+ [ 13197.024]
+ ...
+ [100917.625]
+ [100917.625]
+ [100917.625]] 
+Cumulative Absolute Percentage Error on test data: 0.07440904157449237 
+
+
+
+03_30_2022_16_38_22. Model_architecture: FFNN. Trial: 0. Epochs: 445. Hyperparameters: [[32, 256, 512, 1024], 0]
+Model: "custom_ffnn_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_10 (Dense)            multiple                  512       
+                                                                 
+ dense_11 (Dense)            multiple                  8448      
+                                                                 
+ dense_12 (Dense)            multiple                  131584    
+                                                                 
+ dense_13 (Dense)            multiple                  525312    
+                                                                 
+ dense_14 (Dense)            multiple                  1025      
+                                                                 
+=================================================================
+Total params: 666,881
+Trainable params: 666,881
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [202243200.0, 14221.2236328125, 0.07641839236021042] 
+Prediction: [[11117.1045]
+ [12056.423 ]
+ [13021.879 ]
+ ...
+ [94869.36  ]
+ [94869.36  ]
+ [94869.36  ]] 
+Cumulative Absolute Percentage Error on test data: 0.07641845259820222 
+
+
+
+03_30_2022_16_52_28. Model_architecture: FFNN. Trial: 0. Epochs: 353. Hyperparameters: [[32, 64, 256, 512, 1024], 0]
+Model: "custom_ffnn"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               multiple                  192       
+                                                                 
+ dense_1 (Dense)             multiple                  2112      
+                                                                 
+ dense_2 (Dense)             multiple                  16640     
+                                                                 
+ dense_3 (Dense)             multiple                  131584    
+                                                                 
+ dense_4 (Dense)             multiple                  525312    
+                                                                 
+ dense_5 (Dense)             multiple                  1025      
+                                                                 
+=================================================================
+Total params: 676,865
+Trainable params: 676,865
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [182421696.0, 13506.3583984375, 0.0736093521118164] 
+Prediction: [[ 12496.382 ]
+ [ 13221.624 ]
+ [ 13947.2705]
+ ...
+ [100207.36  ]
+ [100207.36  ]
+ [100207.36  ]] 
+Cumulative Absolute Percentage Error on test data: 0.07360936808616184 
+
+
+
+03_30_2022_17_01_19. Model_architecture: FFNN. Trial: 0. Epochs: 342. Hyperparameters: [[32, 64, 256, 512, 1024], 0]
+Model: "custom_ffnn_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_6 (Dense)             multiple                  192       
+                                                                 
+ dense_7 (Dense)             multiple                  2112      
+                                                                 
+ dense_8 (Dense)             multiple                  16640     
+                                                                 
+ dense_9 (Dense)             multiple                  131584    
+                                                                 
+ dense_10 (Dense)            multiple                  525312    
+                                                                 
+ dense_11 (Dense)            multiple                  1025      
+                                                                 
+=================================================================
+Total params: 676,865
+Trainable params: 676,865
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [185581664.0, 13622.8359375, 0.07433256506919861] 
+Prediction: [[12391.78 ]
+ [13187.39 ]
+ [14026.802]
+ ...
+ [99173.555]
+ [99173.555]
+ [99173.555]] 
+Cumulative Absolute Percentage Error on test data: 0.07433253785914282 
+
+
+
+03_30_2022_17_10_46. Model_architecture: FFNN. Trial: 0. Epochs: 376. Hyperparameters: [[32, 64, 256, 512, 1024], 0]
+Model: "custom_ffnn_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_12 (Dense)            multiple                  512       
+                                                                 
+ dense_13 (Dense)            multiple                  2112      
+                                                                 
+ dense_14 (Dense)            multiple                  16640     
+                                                                 
+ dense_15 (Dense)            multiple                  131584    
+                                                                 
+ dense_16 (Dense)            multiple                  525312    
+                                                                 
+ dense_17 (Dense)            multiple                  1025      
+                                                                 
+=================================================================
+Total params: 677,185
+Trainable params: 677,185
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [197475968.0, 14052.6142578125, 0.07592706382274628] 
+Prediction: [[11742.438]
+ [12602.27 ]
+ [13513.001]
+ ...
+ [97773.82 ]
+ [97773.82 ]
+ [97773.82 ]] 
+Cumulative Absolute Percentage Error on test data: 0.07592706282313165 
+
+
+
+03_30_2022_17_19_39. Model_architecture: FFNN. Trial: 0. Epochs: 356. Hyperparameters: [[32, 64, 256, 512, 1024], 0]
+Model: "custom_ffnn_3"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_18 (Dense)            multiple                  512       
+                                                                 
+ dense_19 (Dense)            multiple                  2112      
+                                                                 
+ dense_20 (Dense)            multiple                  16640     
+                                                                 
+ dense_21 (Dense)            multiple                  131584    
+                                                                 
+ dense_22 (Dense)            multiple                  525312    
+                                                                 
+ dense_23 (Dense)            multiple                  1025      
+                                                                 
+=================================================================
+Total params: 677,185
+Trainable params: 677,185
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [195304816.0, 13975.1494140625, 0.07581312209367752] 
+Prediction: [[11266.513 ]
+ [12182.6455]
+ [13077.123 ]
+ ...
+ [96527.02  ]
+ [96527.02  ]
+ [96527.02  ]] 
+Cumulative Absolute Percentage Error on test data: 0.07581311594585184 
+
+
+
+03_30_2022_17_37_52. Model_architecture: FFNN. Trial: 0. Epochs: 353. Hyperparameters: [[32, 64, 128, 256, 512], 0]
+Model: "custom_ffnn"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               multiple                  192       
+                                                                 
+ dense_1 (Dense)             multiple                  2112      
+                                                                 
+ dense_2 (Dense)             multiple                  8320      
+                                                                 
+ dense_3 (Dense)             multiple                  33024     
+                                                                 
+ dense_4 (Dense)             multiple                  131584    
+                                                                 
+ dense_5 (Dense)             multiple                  513       
+                                                                 
+=================================================================
+Total params: 175,745
+Trainable params: 175,745
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [184959904.0, 13599.99609375, 0.0741417407989502] 
+Prediction: [[11711.898]
+ [12427.488]
+ [13203.128]
+ ...
+ [99079.7  ]
+ [99079.7  ]
+ [99079.7  ]] 
+Cumulative Absolute Percentage Error on test data: 0.0741417256619922 
+
+
+
+03_30_2022_17_47_16. Model_architecture: FFNN. Trial: 0. Epochs: 352. Hyperparameters: [[32, 64, 128, 256, 512], 0]
+Model: "custom_ffnn_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_6 (Dense)             multiple                  192       
+                                                                 
+ dense_7 (Dense)             multiple                  2112      
+                                                                 
+ dense_8 (Dense)             multiple                  8320      
+                                                                 
+ dense_9 (Dense)             multiple                  33024     
+                                                                 
+ dense_10 (Dense)            multiple                  131584    
+                                                                 
+ dense_11 (Dense)            multiple                  513       
+                                                                 
+=================================================================
+Total params: 175,745
+Trainable params: 175,745
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [186394384.0, 13652.6328125, 0.07494458556175232] 
+Prediction: [[ 11866.578]
+ [ 12622.189]
+ [ 13366.44 ]
+ ...
+ [100685.055]
+ [100685.055]
+ [100685.055]] 
+Cumulative Absolute Percentage Error on test data: 0.0749445866612994 
+
+
+
+03_30_2022_17_57_57. Model_architecture: FFNN. Trial: 0. Epochs: 392. Hyperparameters: [[32, 64, 128, 256, 512], 0]
+Model: "custom_ffnn_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_12 (Dense)            multiple                  512       
+                                                                 
+ dense_13 (Dense)            multiple                  2112      
+                                                                 
+ dense_14 (Dense)            multiple                  8320      
+                                                                 
+ dense_15 (Dense)            multiple                  33024     
+                                                                 
+ dense_16 (Dense)            multiple                  131584    
+                                                                 
+ dense_17 (Dense)            multiple                  513       
+                                                                 
+=================================================================
+Total params: 176,065
+Trainable params: 176,065
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [195237152.0, 13972.728515625, 0.07543203979730606] 
+Prediction: [[11769.018]
+ [12484.723]
+ [13333.691]
+ ...
+ [99485.57 ]
+ [99485.57 ]
+ [99485.57 ]] 
+Cumulative Absolute Percentage Error on test data: 0.0754320265084248 
+
+
+
+03_30_2022_18_10_32. Model_architecture: FFNN. Trial: 0. Epochs: 487. Hyperparameters: [[32, 64, 128, 256, 512], 0]
+Model: "custom_ffnn_3"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_18 (Dense)            multiple                  512       
+                                                                 
+ dense_19 (Dense)            multiple                  2112      
+                                                                 
+ dense_20 (Dense)            multiple                  8320      
+                                                                 
+ dense_21 (Dense)            multiple                  33024     
+                                                                 
+ dense_22 (Dense)            multiple                  131584    
+                                                                 
+ dense_23 (Dense)            multiple                  513       
+                                                                 
+=================================================================
+Total params: 176,065
+Trainable params: 176,065
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [199393472.0, 14120.6748046875, 0.07612849771976471] 
+Prediction: [[11340.525]
+ [12380.614]
+ [13732.023]
+ ...
+ [98599.89 ]
+ [98599.89 ]
+ [98599.89 ]] 
+Cumulative Absolute Percentage Error on test data: 0.07612851477749646 
+
+
+
+03_30_2022_18_44_22. Model_architecture: FFNN. Trial: 0. Epochs: 351. Hyperparameters: [[64, 128, 256, 512, 1024], 0]
+Model: "custom_ffnn"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               multiple                  384       
+                                                                 
+ dense_1 (Dense)             multiple                  8320      
+                                                                 
+ dense_2 (Dense)             multiple                  33024     
+                                                                 
+ dense_3 (Dense)             multiple                  131584    
+                                                                 
+ dense_4 (Dense)             multiple                  525312    
+                                                                 
+ dense_5 (Dense)             multiple                  1025      
+                                                                 
+=================================================================
+Total params: 699,649
+Trainable params: 699,649
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [185605040.0, 13623.6943359375, 0.07456336915493011] 
+Prediction: [[11759.085]
+ [12566.742]
+ [13435.182]
+ ...
+ [98688.62 ]
+ [98688.62 ]
+ [98688.62 ]] 
+Cumulative Absolute Percentage Error on test data: 0.07456333676698017 
+
+
+
+03_30_2022_18_52_58. Model_architecture: FFNN. Trial: 0. Epochs: 325. Hyperparameters: [[64, 128, 256, 512, 1024], 0]
+Model: "custom_ffnn_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_6 (Dense)             multiple                  384       
+                                                                 
+ dense_7 (Dense)             multiple                  8320      
+                                                                 
+ dense_8 (Dense)             multiple                  33024     
+                                                                 
+ dense_9 (Dense)             multiple                  131584    
+                                                                 
+ dense_10 (Dense)            multiple                  525312    
+                                                                 
+ dense_11 (Dense)            multiple                  1025      
+                                                                 
+=================================================================
+Total params: 699,649
+Trainable params: 699,649
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [186018624.0, 13638.8642578125, 0.0742708295583725] 
+Prediction: [[ 11899.898]
+ [ 12701.861]
+ [ 13515.661]
+ ...
+ [103024.89 ]
+ [103024.89 ]
+ [103024.89 ]] 
+Cumulative Absolute Percentage Error on test data: 0.07427084555107703 
+
+
+
+03_30_2022_19_02_35. Model_architecture: FFNN. Trial: 0. Epochs: 351. Hyperparameters: [[64, 128, 256, 512, 1024], 0]
+Model: "custom_ffnn_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_12 (Dense)            multiple                  384       
+                                                                 
+ dense_13 (Dense)            multiple                  8320      
+                                                                 
+ dense_14 (Dense)            multiple                  33024     
+                                                                 
+ dense_15 (Dense)            multiple                  131584    
+                                                                 
+ dense_16 (Dense)            multiple                  525312    
+                                                                 
+ dense_17 (Dense)            multiple                  1025      
+                                                                 
+=================================================================
+Total params: 699,649
+Trainable params: 699,649
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [183241824.0, 13536.6845703125, 0.07391951233148575] 
+Prediction: [[11964.574]
+ [12536.413]
+ [13152.918]
+ ...
+ [98369.73 ]
+ [98369.73 ]
+ [98369.73 ]] 
+Cumulative Absolute Percentage Error on test data: 0.07391948539019967 
+
+
+
+03_30_2022_19_11_36. Model_architecture: FFNN. Trial: 0. Epochs: 337. Hyperparameters: [[64, 128, 256, 512, 1024], 0]
+Model: "custom_ffnn_3"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_18 (Dense)            multiple                  384       
+                                                                 
+ dense_19 (Dense)            multiple                  8320      
+                                                                 
+ dense_20 (Dense)            multiple                  33024     
+                                                                 
+ dense_21 (Dense)            multiple                  131584    
+                                                                 
+ dense_22 (Dense)            multiple                  525312    
+                                                                 
+ dense_23 (Dense)            multiple                  1025      
+                                                                 
+=================================================================
+Total params: 699,649
+Trainable params: 699,649
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [185331680.0, 13613.6572265625, 0.07406581193208694] 
+Prediction: [[ 11009.385]
+ [ 11750.364]
+ [ 12536.055]
+ ...
+ [101841.43 ]
+ [101841.43 ]
+ [101841.43 ]] 
+Cumulative Absolute Percentage Error on test data: 0.0740657783425423 
+
+
+
+03_30_2022_19_28_22. Model_architecture: FFNN. Trial: 0. Epochs: 471. Hyperparameters: [[32, 256, 512, 1024], 0]
+Model: "custom_ffnn"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               multiple                  512       
+                                                                 
+ dense_1 (Dense)             multiple                  8448      
+                                                                 
+ dense_2 (Dense)             multiple                  131584    
+                                                                 
+ dense_3 (Dense)             multiple                  525312    
+                                                                 
+ dense_4 (Dense)             multiple                  1025      
+                                                                 
+=================================================================
+Total params: 666,881
+Trainable params: 666,881
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [188563136.0, 13731.8291015625, 0.07466071844100952] 
+Prediction: [[ 11522.681]
+ [ 12072.632]
+ [ 13152.513]
+ ...
+ [101455.53 ]
+ [101455.53 ]
+ [101455.53 ]] 
+Cumulative Absolute Percentage Error on test data: 0.07466073342423568 
+
+
+
+03_30_2022_19_40_36. Model_architecture: FFNN. Trial: 0. Epochs: 501. Hyperparameters: [[32, 256, 512, 1024], 0]
+Model: "custom_ffnn_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_5 (Dense)             multiple                  512       
+                                                                 
+ dense_6 (Dense)             multiple                  8448      
+                                                                 
+ dense_7 (Dense)             multiple                  131584    
+                                                                 
+ dense_8 (Dense)             multiple                  525312    
+                                                                 
+ dense_9 (Dense)             multiple                  1025      
+                                                                 
+=================================================================
+Total params: 666,881
+Trainable params: 666,881
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [188441728.0, 13727.408203125, 0.07465563714504242] 
+Prediction: [[ 12337.787]
+ [ 13430.283]
+ [ 14577.746]
+ ...
+ [102293.83 ]
+ [102293.83 ]
+ [102293.83 ]] 
+Cumulative Absolute Percentage Error on test data: 0.07465566385595482 
+
+
+
+03_30_2022_19_58_42. Model_architecture: FFNN. Trial: 0. Epochs: 461. Hyperparameters: [[32, 256, 512, 1024], 0]
+Model: "custom_ffnn"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               multiple                  512       
+                                                                 
+ dense_1 (Dense)             multiple                  8448      
+                                                                 
+ dense_2 (Dense)             multiple                  131584    
+                                                                 
+ dense_3 (Dense)             multiple                  525312    
+                                                                 
+ dense_4 (Dense)             multiple                  1025      
+                                                                 
+=================================================================
+Total params: 666,881
+Trainable params: 666,881
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [179436608.0, 13395.39453125, 0.07287261635065079] 
+Prediction: [[ 11378.429]
+ [ 12198.309]
+ [ 13168.661]
+ ...
+ [102503.57 ]
+ [102503.57 ]
+ [102503.57 ]] 
+Cumulative Absolute Percentage Error on test data: 0.072872651558213 
+
+
+
+03_30_2022_20_13_02. Model_architecture: FFNN. Trial: 0. Epochs: 420. Hyperparameters: [[32, 256, 512, 1024], 0]
+Model: "custom_ffnn"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               multiple                  512       
+                                                                 
+ dense_1 (Dense)             multiple                  8448      
+                                                                 
+ dense_2 (Dense)             multiple                  131584    
+                                                                 
+ dense_3 (Dense)             multiple                  525312    
+                                                                 
+ dense_4 (Dense)             multiple                  1025      
+                                                                 
+=================================================================
+Total params: 666,881
+Trainable params: 666,881
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [181016176.0, 13454.224609375, 0.07262836396694183] 
+Prediction: [[ 10183.646]
+ [ 10691.126]
+ [ 11378.029]
+ ...
+ [100491.125]
+ [100491.125]
+ [100491.125]] 
+Cumulative Absolute Percentage Error on test data: 0.07262837866852798 
+
+
+
+03_30_2022_20_34_06. Model_architecture: FFNN. Trial: 0. Epochs: 613. Hyperparameters: [[32, 256, 512, 1024], 0]
+Model: "custom_ffnn"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               multiple                  192       
+                                                                 
+ dense_1 (Dense)             multiple                  8448      
+                                                                 
+ dense_2 (Dense)             multiple                  131584    
+                                                                 
+ dense_3 (Dense)             multiple                  525312    
+                                                                 
+ dense_4 (Dense)             multiple                  1025      
+                                                                 
+=================================================================
+Total params: 666,561
+Trainable params: 666,561
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [180222048.0, 13424.6806640625, 0.07287506759166718] 
+Prediction: [[ 12046.618]
+ [ 12706.182]
+ [ 13403.57 ]
+ ...
+ [100128.586]
+ [100128.586]
+ [100128.586]] 
+Cumulative Absolute Percentage Error on test data: 0.07287505047157224 
+
+
+
+03_30_2022_20_56_54. Model_architecture: FFNN. Trial: 0. Epochs: 701. Hyperparameters: [[32, 256, 512, 1024], 0]
+Model: "custom_ffnn_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_5 (Dense)             multiple                  192       
+                                                                 
+ dense_6 (Dense)             multiple                  8448      
+                                                                 
+ dense_7 (Dense)             multiple                  131584    
+                                                                 
+ dense_8 (Dense)             multiple                  525312    
+                                                                 
+ dense_9 (Dense)             multiple                  1025      
+                                                                 
+=================================================================
+Total params: 666,561
+Trainable params: 666,561
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [181199584.0, 13461.0390625, 0.07320212572813034] 
+Prediction: [[ 11473.925]
+ [ 12338.296]
+ [ 13331.629]
+ ...
+ [104295.9  ]
+ [104295.9  ]
+ [104295.9  ]] 
+Cumulative Absolute Percentage Error on test data: 0.07320213421960964 
+
+
+
+03_30_2022_21_13_56. Model_architecture: FFNN. Trial: 0. Epochs: 461. Hyperparameters: [[32, 256, 512, 1024], 0]
+Model: "custom_ffnn_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_10 (Dense)            multiple                  192       
+                                                                 
+ dense_11 (Dense)            multiple                  8448      
+                                                                 
+ dense_12 (Dense)            multiple                  131584    
+                                                                 
+ dense_13 (Dense)            multiple                  525312    
+                                                                 
+ dense_14 (Dense)            multiple                  1025      
+                                                                 
+=================================================================
+Total params: 666,561
+Trainable params: 666,561
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [179668352.0, 13404.0419921875, 0.07277718931436539] 
+Prediction: [[11612.025]
+ [12590.449]
+ [13828.567]
+ ...
+ [98444.14 ]
+ [98444.14 ]
+ [98444.14 ]] 
+Cumulative Absolute Percentage Error on test data: 0.0727771996173202 
+
+
+
+03_30_2022_21_43_42. Model_architecture: FFNN. Trial: 0. Epochs: 481. Hyperparameters: [[32, 256, 512, 1024], 0]
+Model: "custom_ffnn"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               multiple                  512       
+                                                                 
+ dense_1 (Dense)             multiple                  8448      
+                                                                 
+ dense_2 (Dense)             multiple                  131584    
+                                                                 
+ dense_3 (Dense)             multiple                  525312    
+                                                                 
+ dense_4 (Dense)             multiple                  1025      
+                                                                 
+=================================================================
+Total params: 666,881
+Trainable params: 666,881
+Non-trainable params: 0
+_________________________________________________________________
+Evaluation: [180756688.0, 13444.578125, 0.07337324321269989] 
+Prediction: [[ 11362.916]
+ [ 12296.701]
+ [ 13307.943]
+ ...
+ [100167.26 ]
+ [100167.26 ]
+ [100167.26 ]] 
+Cumulative Absolute Percentage Error on test data: 0.07337322863961794 
+
+
+
