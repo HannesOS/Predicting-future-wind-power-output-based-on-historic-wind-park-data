@@ -136,6 +136,44 @@ def analyze_data(data, save=True):
             cov.to_csv('data_statistics\covariance.csv')
             corr.to_csv('data_statistics\correlation.csv')
 
+
+def visualize_train_history(history):
+        """
+        Visualizes the training and validation loss aswell as the training and validation CAPE during the training of a model.
+
+
+        Args:
+            history (History): Training history of a model. Returned from using model.fit()
+        """
+        max_epochs = 100
+        loss = history.history["loss"][:max_epochs]
+        val_loss = history.history["val_loss"][:max_epochs]
+        cape = history.history["cumulative_absolute_percentage_error_kerras_metric"][:max_epochs]
+        val_cape = history.history["val_cumulative_absolute_percentage_error_kerras_metric"][:max_epochs]
+        
+        epochs = range(len(loss))[:max_epochs]
+        
+        fig, ax = plt.subplots(dpi=500, figsize=(7,4.5))
+        
+        ax.plot(epochs, loss, linewidth=2, color= "blue", label="Training loss")
+        ax.plot(epochs, val_loss, linewidth=2, color="red", label="Validation loss")
+        ax.set_xlabel("Epochs")
+        ax.set_ylabel("Loss (MSE)")
+        ax.ticklabel_format(axis='y', style='sci', scilimits=(8,8), useMathText=True)
+        ax.set_xlim(0, len(loss))
+        ax.legend(frameon=False, shadow=True)
+        fig.savefig("figures\loss.png")
+
+        fig, ax = plt.subplots(dpi=500, figsize=(7,4.5))
+        ax.plot(epochs, cape, linewidth=2, color="blue", label="Training CAPE")
+        ax.plot(epochs, val_cape, linewidth=2, color="red", label="Validation CAPE")
+        ax.set_xlabel("Epochs")
+        ax.set_ylabel("CAPE")
+        ax.set_xlim(0, len(loss))
+        ax.legend(frameon=False, shadow=True)
+        fig.savefig("figures\CAPE.png")
+
+
 def scatter_plot(data, col1, col2):
         """
         Creates a scatter plot between two variables and shows it.
