@@ -26,6 +26,7 @@ Our best model is able to forecast power output of the wind park for the second 
 <b>trained_models:</b> Serialized version of trained models.<br><br>
 <b>energy_output_prediction.py:</b> Main module for this project. Demonstrates our best models and shows their results.<br><br>
 <b>train.py:</b> Contains functions required for training and optimizing our models. If used as a main module, trains the specified model.<br><br>
+<b>Using_TensorFlow_to_predict_future_wind_power_output_based_on_historic_wind_park_data_Bremen_Big_Data_Challenge_2018.pdf:<b> Project paper. <br><br>
 
 
 
