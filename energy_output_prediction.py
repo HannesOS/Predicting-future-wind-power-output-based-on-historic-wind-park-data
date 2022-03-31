@@ -60,6 +60,7 @@ def predict_output(model, model_architecture, x_test):
     np.savetxt(f'predictions\\prediction_{model_architecture}.csv', prediction, fmt='%.4f')
     print(f'Energy output prediction: {prediction}')
     print(f'CAPE: {CAPE(x_test, prediction)}')
+    return prediction
 
 
 # Now we load the best trained models we obtained for each architecture. 
@@ -84,7 +85,7 @@ predict_output(model_FFNN, 'FFNN', x_test)
 
 print("\n\n\nPredicting the energy output using an FFNN model with autoencoded data:")
 model_FFNN_encoded.summary()
-predict_output(model_FFNN_encoded, 'FFNN_encoded', x_test_encoded)
+best_prediction = predict_output(model_FFNN_encoded, 'FFNN_encoded', x_test_encoded)
 
 
 print("\n\n\nPredicting the energy output using an LSTM model:")
@@ -107,6 +108,10 @@ predict_output(model_GRU_encoded, 'GRU_encoded', timeseries_data_test_encoded)
 
 print("\n\nThe best model we tried is therefore the feedforward-Network with autoencoded data")
 
+#Plotting our best prediciton together with the real energy output of the test data
+test_data, test_date_time = load_csv_data(PATH_SOLUTION)
+start_days = np.arange(0, 200)
+plot_time_series(test_data, test_date_time, start_day=30, end_day=60, prediction=best_prediction)
 
 
 

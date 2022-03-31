@@ -145,6 +145,7 @@ def visualize_train_history(history):
         Args:
             history (History): Training history of a model. Returned from using model.fit()
         """
+
         max_epochs = 100
         loss = history.history["loss"][:max_epochs]
         val_loss = history.history["val_loss"][:max_epochs]
@@ -194,7 +195,7 @@ def scatter_plot(data, col1, col2):
         plt.show()
 
 
-def plot_time_series(data, date_time, column=COLUMN_NAMES[-1], start_day=330, end_day=344):
+def plot_time_series(data, date_time, column=COLUMN_NAMES[-1], start_day=330, end_day=344, prediction=None):
         """
         Creates a time series plots and saves it locally.
 
@@ -210,12 +211,16 @@ def plot_time_series(data, date_time, column=COLUMN_NAMES[-1], start_day=330, en
         end_timestep = day_to_timestep(end_day)
         
         fig, ax = plt.subplots(dpi=900, figsize=(9,3))
-        ax.plot(date_time[start_timestep:end_timestep], data[column][start_timestep:end_timestep], color='black')
+        ax.plot(date_time[start_timestep:end_timestep], data[column][start_timestep:end_timestep], color='black', zorder=1)
+        if prediction is not None:
+            ax.plot(date_time[start_timestep:end_timestep], prediction[start_timestep:end_timestep], linestyle='dashed', color='red', zorder=2)
+            ax.legend(['Real', 'Predicted'])
         ax.set_xlim((date_time[start_timestep], date_time[end_timestep]))
         ax.set_ylabel(column, fontsize=12)
         ax.ticklabel_format(axis='y', style='sci', scilimits=(4,4), useMathText=True)
         fig.savefig(f'figures\\timeseries_{dt.now().strftime("%m_%d_%Y_%H_%M_%S")}.png')
-        
+
+
 
 def day_to_timestep(day):
         """
