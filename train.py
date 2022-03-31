@@ -114,7 +114,7 @@ def train_model(x_train, y_train, x_test,
                 0, history,
                 hyperparameters 
                 )
-    return model
+    return history
 
 
 def hyperparams_search(x_train, y_train, x_test,
@@ -194,7 +194,7 @@ def hyperparams_search(x_train, y_train, x_test,
 
 
 if __name__ == "__main__":
-    model_architecture = 'FFNN' #Choose between FFNN, LSTM, GRU autoencoder
+    model_architecture = 'FFNN' #Choose between FFNN, LSTM, GRU, autoencoder and random_forest
     encoded = True
 
     excluded_features = [15, 16] #drop interpolated and capacity columns as they shouldn't matter
@@ -214,8 +214,8 @@ if __name__ == "__main__":
 
     if model_architecture == 'random_forest':
         regr = RandomForestRegressor()
-        #regr.fit(x_train, y_train)
-        scores = cross_val_score(regr, x_train, y_train, cv=2)
+        regr.fit(x_train, y_train)
+        scores = cross_val_score(regr, x_train, y_train)
         print(scores)
         prediction = regr.predict(x_test)
         CAPE = cumulative_absolute_percentage_error(y_test.to_numpy(dtype=float), prediction.flatten())
@@ -225,7 +225,7 @@ if __name__ == "__main__":
         if model_architecture == 'LSTM' or model_architecture == 'GRU':
             x_train = get_features_and_targets(csv_path=PATH_TRAIN_DATA, model_architecture='LSTM', excluded_features=excluded_features, normalize=False, autoencoder=autoencoder)
             x_test = get_features_and_targets(csv_path=PATH_SOLUTION, model_architecture='LSTM', excluded_features=excluded_features, normalize=False, autoencoder=autoencoder)
-        
+            
         possible_layer_units, possible_layer_amount, dropout_rates = get_hyperparameters(model_architecture)
         hyperparams_search(x_train, y_train, x_test,
             y_test, model_architecture, possible_layer_units,
