@@ -153,24 +153,27 @@ def visualize_train_history(history):
         
         epochs = range(len(loss))[:max_epochs]
         
-        fig, ax = plt.subplots(dpi=500, figsize=(7,4.5))
-        
-        ax.plot(epochs, loss, linewidth=2, color= "blue", label="Training loss")
-        ax.plot(epochs, val_loss, linewidth=2, color="red", label="Validation loss")
-        ax.set_xlabel("Epochs")
-        ax.set_ylabel("Loss (MSE)")
+        fig, ax = plt.subplots(dpi=500, figsize=(8,5))
+        plt.gcf().subplots_adjust(bottom=0.15)
+        ax.plot(epochs, loss, linewidth=2.7, color= "blue", label="Training loss")
+        ax.plot(epochs, val_loss, linewidth=2.7, color="red", label="Validation loss")
+        ax.set_xlabel("Epochs", fontsize=15.5)
+        ax.set_ylabel("Loss (MSE)", fontsize=15.5)
         ax.ticklabel_format(axis='y', style='sci', scilimits=(8,8), useMathText=True)
+        ax.tick_params(axis='both', labelsize=13)
         ax.set_xlim(0, len(loss))
-        ax.legend(frameon=False, shadow=True)
+        ax.legend(frameon=False, shadow=True, fontsize=15)
         fig.savefig("figures\loss.png")
 
-        fig, ax = plt.subplots(dpi=500, figsize=(7,4.5))
-        ax.plot(epochs, cape, linewidth=2, color="blue", label="Training CAPE")
-        ax.plot(epochs, val_cape, linewidth=2, color="red", label="Validation CAPE")
-        ax.set_xlabel("Epochs")
-        ax.set_ylabel("CAPE")
+        fig, ax = plt.subplots(dpi=500, figsize=(8,5))
+        plt.gcf().subplots_adjust(bottom=0.15)
+        ax.plot(epochs, cape, linewidth=2.7, color="blue", label="Training CAPE")
+        ax.plot(epochs, val_cape, linewidth=2.7, color="red", label="Validation CAPE")
+        ax.set_xlabel("Epochs", fontsize=15.5)
+        ax.set_ylabel("CAPE", fontsize=15.5)
+        ax.tick_params(axis='both', labelsize=13)
         ax.set_xlim(0, len(loss))
-        ax.legend(frameon=False, shadow=True)
+        ax.legend(frameon=False, shadow=True, fontsize=15)
         fig.savefig("figures\CAPE.png")
 
 
